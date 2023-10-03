@@ -131,7 +131,7 @@ class ContactForm extends Component {
 						<span className='gutter-width'>
 							<label
 								className='form-label-lg before after mb-0'
-								htmlFor='cf-1-name-surename'
+								htmlFor='fullName'
 							>
 								Full Name *
 							</label>
@@ -141,7 +141,7 @@ class ContactForm extends Component {
 								value={this.state.values.name}
 								onChange={this.handleInputChange}
 								type='text'
-								id='cf-1-name-surename'
+								id='fullName'
 								placeholder='Your name here'
 								required='required'
 							/>
@@ -152,7 +152,7 @@ class ContactForm extends Component {
 								className='form-label-lg before after mb-0'
 								htmlFor='cf-1-services'
 							>
-								Choose a service *
+								Choose a service
 							</label>
 
 							<select
@@ -162,12 +162,12 @@ class ContactForm extends Component {
 								value={this.state.values.services}
 								onChange={this.handleInputChange}
 							>
-								<option value='hair-treatments'>Haircut</option>
-								<option value='face-and-body'>Shave</option>
-								<option value='hands-feets'>
+								<option value='haircut'>Haircut</option>
+								<option value='shave'>Shave</option>
+								<option value='haircut & shave'>
 									Haircut & Shave
 								</option>
-								<option value='haircuts-for-men'>
+								<option value='beard trim'>
 									Beard Trim
 								</option>
 							</select>
@@ -232,7 +232,7 @@ class ContactForm extends Component {
 					></textarea>
 				</div>
 
-				<div className='form-group form-group-lg mb-0'>
+				<div className='form-group form-group-lg mb-5'>
 					<button
 						type='submit'
 						className='btn btn-outline-secondary text-uppercase'

@@ -50,3 +50,4 @@ Thumbs.db
 
 # MISC
 .firebase/hosting.*.cache
+build/
