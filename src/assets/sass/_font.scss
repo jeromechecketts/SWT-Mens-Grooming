@@ -1,0 +1,104 @@
+//=================================================
+// Fonts
+//=================================================
+
+// Merriweather-Regular
+@font-face {
+    font-family: 'Merriweather-Regular';
+    src: url('../fonts/Merriweather/Merriweather-Regular/Merriweather-Regular.eot');
+    src: url('../fonts/Merriweather/Merriweather-Regular/Merriweather-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Merriweather/Merriweather-Regular/Merriweather-Regular.woff2') format('woff2'),
+         url('../fonts/Merriweather/Merriweather-Regular/Merriweather-Regular.woff') format('woff'),
+         url('../fonts/Merriweather/Merriweather-Regular/Merriweather-Regular.ttf') format('truetype'),
+         url('../fonts/Merriweather/Merriweather-Regular/Merriweather-Regular.svg#Merriweather-Regular') format('svg');
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+// Merriweather-Bold
+@font-face {
+    font-family: 'Merriweather-Bold';
+    src: url('../fonts/Merriweather/Merriweather-Bold/Merriweather-Bold.eot');
+    src: url('../fonts/Merriweather/Merriweather-Bold/Merriweather-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Merriweather/Merriweather-Bold/Merriweather-Bold.woff2') format('woff2'),
+         url('../fonts/Merriweather/Merriweather-Bold/Merriweather-Bold.woff') format('woff'),
+         url('../fonts/Merriweather/Merriweather-Bold/Merriweather-Bold.ttf') format('truetype'),
+         url('../fonts/Merriweather/Merriweather-Bold/Merriweather-Bold.svg#Merriweather-Bold') format('svg');
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+// Oswald-Regular
+@font-face {
+    font-family: 'Oswald-Regular';
+    src: url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.eot');
+    src: url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.woff2') format('woff2'),
+         url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.woff') format('woff'),
+         url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.ttf') format('truetype'),
+         url('../fonts/Oswald/Oswald-Regular/Oswald-Regular.svg#Oswald-Regular') format('svg');
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+// Oswald-Medium
+@font-face {
+    font-family: 'Oswald-Medium';
+    src: url('../fonts/Oswald/Oswald-Medium/Oswald-Medium.eot');
+    src: url('../fonts/Oswald/Oswald-Medium/Oswald-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Oswald/Oswald-Medium/Oswald-Medium.woff2') format('woff2'),
+         url('../fonts/Oswald/Oswald-Medium/Oswald-Medium.woff') format('woff'),
+         url('../fonts/Oswald/Oswald-Medium/Oswald-Medium.ttf') format('truetype'),
+         url('../fonts/Oswald/Oswald-Medium/Oswald-Medium.svg#Oswald-Medium') format('svg');
+    font-style: normal;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+}
+
+// Oswald-SemiBold
+@font-face {
+    font-family: 'Oswald-SemiBold';
+    src: url('../fonts/Oswald/Oswald-SemiBold/Oswald-SemiBold.eot');
+    src: url('../fonts/Oswald/Oswald-SemiBold/Oswald-SemiBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Oswald/Oswald-SemiBold/Oswald-SemiBold.woff2') format('woff2'),
+         url('../fonts/Oswald/Oswald-SemiBold/Oswald-SemiBold.woff') format('woff'),
+         url('../fonts/Oswald/Oswald-SemiBold/Oswald-SemiBold.ttf') format('truetype'),
+         url('../fonts/Oswald/Oswald-SemiBold/Oswald-SemiBold.svg#Oswald-SemiBold') format('svg');
+    font-style: normal;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+}
+
+// Oswald-Bold
+@font-face {
+    font-family: 'Oswald-Bold';
+    src: url('../fonts/Oswald/Oswald-Bold/Oswald-Bold.eot');
+    src: url('../fonts/Oswald/Oswald-Bold/Oswald-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Oswald/Oswald-Bold/Oswald-Bold.woff2') format('woff2'),
+         url('../fonts/Oswald/Oswald-Bold/Oswald-Bold.woff') format('woff'),
+         url('../fonts/Oswald/Oswald-Bold/Oswald-Bold.ttf') format('truetype'),
+         url('../fonts/Oswald/Oswald-Bold/Oswald-Bold.svg#Oswald-Bold') format('svg');
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+/*=============================
+// Font size
+=============================*/
+.font-size {
+    &-sm {
+        font-size: $f_size_sm;
+    }
+
+    &-df {
+        font-size: $f_size_df;
+    }
+
+    &-lg {
+        font-size: $f_size_lg;
+    }
+}

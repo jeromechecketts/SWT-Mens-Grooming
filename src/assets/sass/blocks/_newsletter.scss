@@ -1,0 +1,88 @@
+//=================================================
+// Newsletter
+//=================================================
+
+.newsletter {
+	text-align: center;
+
+	.newsletter-title {
+		> * {
+			text-transform: uppercase;
+		}
+	}
+
+	.newsletter-description {
+		padding-top: $space_lg;
+		max-width: 506px;
+		margin: auto;
+	}
+
+	.newsletter-shortcode {
+		padding-top: $space_lg;
+		max-width: 780px;
+		margin: auto;
+
+		form {
+			position: relative;
+
+			input {
+				padding-right: 6rem;
+			}
+
+			.input-group {
+				&.top-no-space {
+					margin-top: -1.158rem;
+				}
+			}
+
+			.input-group-append {
+				position: absolute;
+				top: 50%;
+				@include transform(translateY(-50%));
+				right: 0;
+			}
+
+			&.newsletter-form {
+				&.top-no-space {
+					margin-top: -1.158rem;
+				}
+
+				.alert {
+					margin-top: $space_xs;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+.mc4wp-form {
+	position: relative;
+
+	input {
+		padding-right: 6rem;
+	}
+
+	.input-group {
+		&.top-no-space {
+			margin-top: -1.158rem;
+		}
+	}
+
+	.input-group-append {
+		position: absolute;
+		top: 50%;
+		@include transform(translateY(-50%));
+		right: 0;
+	}
+
+	.mc4wp-response {
+		.mc4wp-alert {
+			p {
+				@extend .before;
+				font-size: $f_size_df;
+				margin-top: $space_xs;
+			}
+		}
+	}
+}

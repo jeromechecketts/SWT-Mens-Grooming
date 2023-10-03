@@ -1,0 +1,90 @@
+[
+    {
+        "id": "1",
+        "title": "5 Benefits of Going to a Hair Salon",
+        "link": "/news-single-post",
+        "imgTitle": "5 Benefits of Going to a BARBER",
+        "imgLink": "assets/img/placeholder/507x507.jpg",
+        "imgAlt": "5 Benefits of Going to a BARBER",
+        "categoryTitle": "Hairstyle",
+        "categoryLink": "/news",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "id": "2",
+        "title": "Which Trim Should I Choose?",
+        "link": "/news-single-post",
+        "imgTitle": "Which Trim Should I Choose?",
+        "imgLink": "assets/img/placeholder/507x507.jpg",
+        "imgAlt": "Which Trim Should I Choose?",
+        "categoryTitle": "Beard",
+        "categoryLink": "/news",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "id": "3",
+        "title": "Best Cosmetics for Your HAIR",
+        "link": "/news-single-post",
+        "imgTitle": "Best Cosmetics for Your HAIR",
+        "imgLink": "assets/img/placeholder/507x507.jpg",
+        "imgAlt": "Best Cosmetics for Your HAIR",
+        "categoryTitle": "Cosmetic",
+        "categoryLink": "/news",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "id": "4",
+        "title": "5 Benefits of Going to a Hair Salon",
+        "link": "/news-single-post",
+        "imgTitle": "5 Benefits of Going to a BARBER",
+        "imgLink": "assets/img/placeholder/507x507.jpg",
+        "imgAlt": "5 Benefits of Going to a BARBER",
+        "categoryTitle": "Hairstyle",
+        "categoryLink": "/news",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "id": "5",
+        "title": "Which Trim Should I Choose?",
+        "link": "/news-single-post",
+        "imgTitle": "Which Trim Should I Choose?",
+        "imgLink": "assets/img/placeholder/507x507.jpg",
+        "imgAlt": "Which Trim Should I Choose?",
+        "categoryTitle": "Beard",
+        "categoryLink": "/news",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "id": "6",
+        "title": "Best Cosmetics for Your HAIR",
+        "link": "/news-single-post",
+        "imgTitle": "Best Cosmetics for Your HAIR",
+        "imgLink": "assets/img/placeholder/507x507.jpg",
+        "imgAlt": "Best Cosmetics for Your HAIR",
+        "categoryTitle": "Cosmetic",
+        "categoryLink": "/news",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "id": "7",
+        "title": "5 Benefits of Going to a Hair Salon",
+        "link": "/news-single-post",
+        "imgTitle": "5 Benefits of Going to a BARBER",
+        "imgLink": "assets/img/placeholder/507x507.jpg",
+        "imgAlt": "5 Benefits of Going to a BARBER",
+        "categoryTitle": "Hairstyle",
+        "categoryLink": "/news",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "id": "8",
+        "title": "Which Trim Should I Choose?",
+        "link": "/news-single-post",
+        "imgTitle": "Which Trim Should I Choose?",
+        "imgLink": "assets/img/placeholder/507x507.jpg",
+        "imgAlt": "Which Trim Should I Choose?",
+        "categoryTitle": "Beard",
+        "categoryLink": "/news",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    }
+]
