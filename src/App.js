@@ -6,7 +6,7 @@ import Contacts from './pages/Contacts';
 import News from './pages/News';
 import NewsSinglePost from './pages/NewsSinglePost';
 import Gallery from './pages/Gallery';
-import SearchResults from './pages/SearchResults';
+// import SearchResults from './pages/SearchResults';
 import Services from './pages/Services';
 import ServicesInside from './pages/ServicesInside';
 import page404 from './pages/404';
@@ -46,11 +46,11 @@ function App() {
                     path={ `${ process.env.PUBLIC_URL + "/news-single-post" }` }
                     component={ NewsSinglePost }
                 />
-                <Route
+                {/* <Route
                     exact
                     path={ `${ process.env.PUBLIC_URL + "/search-results" }` }
                     component={ SearchResults }
-                />
+                /> */}
                 <Route
                     exact
                     path={ `${ process.env.PUBLIC_URL + "/services" }` }

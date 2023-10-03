@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import { Modal } from 'react-bootstrap';
 import HeaderLogo from '../../blocks/logo/HeaderLogo';
-import SearchModal from '../../components/modal/SearchModal';
+// import SearchModal from '../../components/modal/SearchModal';
 import ModalMenuPrimary from '../../blocks/menu/ModalMenuPrimary';
-import ModalMenuSecondary from '../../blocks/menu/ModalMenuSecondary';
+// import ModalMenuSecondary from '../../blocks/menu/ModalMenuSecondary';
 import ModalMenuLanguages from '../../blocks/menu/ModalMenuLanguages';
 import Actions from '../../blocks/actions/Actions';
 
@@ -64,7 +64,7 @@ class MenuModal extends Component {
 
                                     <div className="header-right d-flex justify-content-end">
                                         <div className="d-flex align-items-center">
-                                            <SearchModal />
+                                            {/* <SearchModal /> */}
 
                                             <div className="menu-close-toggle">
                                                 <button onClick={ this.close } type="button" className="btn btn-lg btn-before-dot btn-link border-0 p-0 min-w-auto" data-dismiss="modal" aria-label="Close">Close menu
@@ -81,7 +81,7 @@ class MenuModal extends Component {
                                 <div className="animated zoomin w-100">
                                     <ModalMenuPrimary />
 
-                                    <ModalMenuSecondary />
+                                    {/* <ModalMenuSecondary /> */}
 
                                     {/* <div className="modal-text">
                                         <p>© 2020 Beauty Salon JS Template by Adveits</p>

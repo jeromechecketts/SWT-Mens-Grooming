@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import emailjs from 'emailjs-com';
+const EMAILJS_SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+const EMAILJS_USER_ID = process.env.REACT_APP_EMAILJS_API_KEY;
 
 class ContactForm extends Component {
 	constructor(props) {
@@ -24,49 +28,48 @@ class ContactForm extends Component {
 		};
 	}
 
-	submitForm = async (e) => {
+	submitForm = (e) => {
 		e.preventDefault();
 
 		if (document.querySelector('#alert')) {
 			document.querySelector('#alert').remove();
 		}
 
-		this.setState({ isSubmitting: true });
-
-		axios
-			.post('https://store.adveits.com/API/form.php', this.state.values, {
-				headers: {
-					'Access-Control-Allow-Origin': '*',
-					'Content-Type': 'application/json; charset=UTF-8',
+		emailjs
+			.send(
+				EMAILJS_SERVICE_ID, // Use your EmailJS service ID here
+				EMAILJS_TEMPLATE_ID, // Use your EmailJS template ID here
+				this.state.values,
+				EMAILJS_USER_ID // Use your EmailJS user ID here
+			)
+			.then(
+				(response) => {
+					if (response.text === 'OK') {
+						this.callAlert(this.state.successMessage, 'success');
+						this.resetForm();
+					} else {
+						this.callAlert(this.state.errorMessage, 'error');
+					}
 				},
-			})
-			.then((response) => {
-				if (response.data.status === 'success') {
-					this.setState({
-						responseMessage: this.state.successMessage,
-					});
+				(error) => {
+					this.callAlert(this.state.errorMessage, 'error');
 				}
-
-				if (response.data.status === 'warning') {
-					this.setState({
-						responseMessage: this.state.warningMessage,
-					});
-				}
-
-				if (response.data.status === 'error') {
-					this.setState({ responseMessage: this.state.errorMessage });
-				}
-
-				this.callAlert(
-					this.state.responseMessage,
-					response.data.status
-				);
-			})
-			.catch((error) => {
-				this.callAlert(this.state.errorMessage, 'error');
-			});
+			);
 	};
 
+	resetForm = () => {
+		this.setState({
+			values: {
+				name: '',
+				services: '',
+				phone: '',
+				email: '',
+				message: '',
+				date: '',
+			}
+		});
+	}
+	
 	removeAlert = () => {
 		clearTimeout(this.state.alertTimeout);
 		this.setState({
@@ -167,9 +170,7 @@ class ContactForm extends Component {
 								<option value='haircut & shave'>
 									Haircut & Shave
 								</option>
-								<option value='beard trim'>
-									Beard Trim
-								</option>
+								<option value='beard trim'>Beard Trim</option>
 							</select>
 						</span>
 					</p>
