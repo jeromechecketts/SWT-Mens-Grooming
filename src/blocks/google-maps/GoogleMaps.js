@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import GoogleMapsStyle from '../../data/google-maps/googleMapsStyle';
+// import GoogleMapsStyle from '../../data/google-maps/googleMapsStyle';
 
 const Maps = () => {
 	const mapRef = useRef(null);
@@ -8,8 +8,7 @@ const Maps = () => {
 	useEffect(() => {
 		const script = document.createElement('script');
 		script.type = 'text/javascript';
-		script.src =
-			'https://maps.googleapis.com/maps/api/js?key=AIzaSyAtFb35xhesKqL6CU3GSJx7sTssDd33pjs';
+		script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`; // Replace with your actual API key or environment variable
 		script.async = true;
 		script.onload = () => {
 			initMap();
@@ -18,22 +17,22 @@ const Maps = () => {
 	}, []);
 
 	const initMap = () => {
-		// 189 Bedford Ave, Brooklyn, NY 11211, United States
+		// 315 E Main St, Uvalde, TX 78801
 		const address_latlng = new window.google.maps.LatLng(
-			40.71748,
-			-73.95773
+			29.210792239396348,
+			-99.78158811786552
 		);
 
 		map.current = new window.google.maps.Map(mapRef.current, {
 			center: address_latlng,
 			zoom: 18,
-			zoomControl: false,
-			mapTypeControl: false,
-			scaleControl: false,
-			streetViewControl: false,
-			rotateControl: false,
-			fullscreenControl: false,
-			styles: GoogleMapsStyle,
+			zoomControl: true,
+			mapTypeControl: true,
+			scaleControl: true,
+			streetViewControl: true,
+			rotateControl: true,
+			fullscreenControl: true,
+			// styles: GoogleMapsStyle,
 		});
 
 		const icon = {
@@ -60,4 +59,3 @@ const Maps = () => {
 
 export default Maps;
 
-// export default scriptLoader( ['https://maps.googleapis.com/maps/api/js?key=AIzaSyAtFb35xhesKqL6CU3GSJx7sTssDd33pjs'] )( Maps );
