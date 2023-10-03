@@ -9,7 +9,7 @@ const AboutsUs = () => {
                 <div className="row gutter-width-sm">
                     <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12">
                         <div className="title">
-                            <h2 className="text-uppercase">Welcome to SWT Mens Grooming. Your go-to sanctuary in Uvalde for exceptional hair and beard care. Look and feel your best with us.</h2>
+                            <h2 className="text-uppercase">Welcome to SouthWest Texas Mens Grooming. Your go-to sanctuary in Uvalde for exceptional hair and beard care. Look and feel your best with us.</h2>
                         </div>
                     </div>
                 </div>
