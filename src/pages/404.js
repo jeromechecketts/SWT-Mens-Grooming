@@ -10,49 +10,83 @@ import BackToHome from '../components/button/BackToHome';
 import SearchForm from '../components/form/SearchForm';
 
 const page404 = () => {
-    document.body.classList.add( 'error404' );
+	document.body.classList.add('error404');
 
-    return (
-        <Fragment>
-            <MetaTags>
-                <meta charSet="UTF-8" />
-                <title>404 | Chop - Barber Shop React JS Template</title>
+	return (
+		<Fragment>
+			<MetaTags>
+				<meta charSet='UTF-8' />
+				<title>404 | SWT Mens Grooming</title>
 
-                <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="description" content="" />
-                <meta name="keywords" content="" />
-                <meta name="robots" content="index, follow, noodp" />
-                <meta name="googlebot" content="index, follow" />
-                <meta name="google" content="notranslate" />
-                <meta name="format-detection" content="telephone=no" />
-            </MetaTags>
+				<meta
+					httpEquiv='x-ua-compatible'
+					content='ie=edge'
+				/>
+				<meta
+					name='viewport'
+					content='width=device-width, initial-scale=1'
+				/>
+				<meta
+					name='description'
+					content=''
+				/>
+				<meta
+					name='keywords'
+					content=''
+				/>
+				<meta
+					name='robots'
+					content='index, follow, noodp'
+				/>
+				<meta
+					name='googlebot'
+					content='index, follow'
+				/>
+				<meta
+					name='google'
+					content='notranslate'
+				/>
+				<meta
+					name='format-detection'
+					content='telephone=no'
+				/>
+			</MetaTags>
 
-            <Loading />
+			<Loading />
 
-            <Header logoColor="dark" />
+			<Header logoColor='dark' />
 
-            <main id="main" className="site-main">
-                <PageTitle404 />
+			<main
+				id='main'
+				className='site-main'
+			>
+				<PageTitle404 />
 
-                <div id="page-content" className="spacer p-top-lg">
-                    <div className="wrapper">
-                        <div className="content">
-                            <p className="text after">The page you were looking for couldn't be found. The page could be removed or you misspelled the word while searching for it. Maybe try a search?</p>
+				<div
+					id='page-content'
+					className='spacer p-top-lg'
+				>
+					<div className='wrapper'>
+						<div className='content'>
+							<p className='text after'>
+								The page you were looking for couldn't be found.
+								The page could be removed or you misspelled the
+								word while searching for it. Maybe try a search?
+							</p>
 
-                            <div className="form">
-                                <SearchForm />
-                            </div>
+							<div className='form'>
+								<SearchForm />
+							</div>
 
-                            <BackToHome />
-                        </div>
-                    </div>
-                </div>
-            </main>
+							<BackToHome />
+						</div>
+					</div>
+				</div>
+			</main>
 
-            <Footer />
-        </Fragment>
-    );
+			<Footer />
+		</Fragment>
+	);
 };
 
 export default page404;

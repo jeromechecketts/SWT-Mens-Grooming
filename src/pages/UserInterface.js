@@ -56,104 +56,150 @@ import Visibility from '../blocks/ui/utilities/visibility/Visibility';
 import Sidebar from '../blocks/ui/sidebar/Sidebar';
 
 const UserInterface = () => {
-    document.body.classList.add( 'page' );
-    document.body.classList.add( 'ui' );
+	document.body.classList.add('page');
+	document.body.classList.add('ui');
 
-    return (
-        <Fragment>
-            <MetaTags>
-                <meta charSet="UTF-8" />
-                <title>UI | SWT Mens Grooming</title>
+	return (
+		<Fragment>
+			<MetaTags>
+				<meta charSet='UTF-8' />
+				<title>UI | SWT Mens Grooming</title>
 
-                <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="description" content="" />
-                <meta name="keywords" content="" />
-                <meta name="robots" content="index, follow, noodp" />
-                <meta name="googlebot" content="index, follow" />
-                <meta name="google" content="notranslate" />
-                <meta name="format-detection" content="telephone=no" />
-            </MetaTags>
+				<meta
+					httpEquiv='x-ua-compatible'
+					content='ie=edge'
+				/>
+				<meta
+					name='viewport'
+					content='width=device-width, initial-scale=1'
+				/>
+				<meta
+					name='description'
+					content=''
+				/>
+				<meta
+					name='keywords'
+					content=''
+				/>
+				<meta
+					name='robots'
+					content='index, follow, noodp'
+				/>
+				<meta
+					name='googlebot'
+					content='index, follow'
+				/>
+				<meta
+					name='google'
+					content='notranslate'
+				/>
+				<meta
+					name='format-detection'
+					content='telephone=no'
+				/>
+			</MetaTags>
 
-            <Loading />
+			<Loading />
 
-            <HeaderUI logoColor="dark" />
+			<HeaderUI logoColor='dark' />
 
-            <main id="main" className="site-main">
-                <PageTitleUserInterface />
+			<main
+				id='main'
+				className='site-main'
+			>
+				<PageTitleUserInterface />
 
-                <div id="page-content" className="spacer p-top-xl">
-                    <div className="wrapper">
-                        <div className="content">
-                            <div className="row gutter-width-sm">
-                            <div className="col-md-12 col-lg-8 col-xl-8">
-                                    <p>Chop project is created using Bootstrap 4 Framework and all of the examples below are based on it. Also, Ency includes custom classes, plugins and scripts which are also based on our experience of Bootstrap 4 Framework.</p>
+				<div
+					id='page-content'
+					className='spacer p-top-xl'
+				>
+					<div className='wrapper'>
+						<div className='content'>
+							<div className='row gutter-width-sm'>
+								<div className='col-md-12 col-lg-8 col-xl-8'>
+									<p>
+										SWT project is created using Bootstrap 4
+										Framework and all of the examples below
+										are based on it. Also, Ency includes
+										custom classes, plugins and scripts
+										which are also based on our experience
+										of Bootstrap 4 Framework.
+									</p>
 
-                                    <div id="content" className="spacer m-top-xl">
-                                        <h2>Content</h2>
+									<div
+										id='content'
+										className='spacer m-top-xl'
+									>
+										<h2>Content</h2>
 
-                                        <Typography />
-                                        <Icons />
-                                        <Images />
-                                        <Tables />
-                                        <Figures />
-                                    </div>
+										<Typography />
+										<Icons />
+										<Images />
+										<Tables />
+										<Figures />
+									</div>
 
-                                    <div id="components" className="block spacer m-top-xl">
-                                        <h2>Components</h2>
+									<div
+										id='components'
+										className='block spacer m-top-xl'
+									>
+										<h2>Components</h2>
 
-                                        <Alerts />
-                                        <Badge />
-                                        <Buttons />
-                                        <ButtonGroup />
-                                        <Card />
-                                        <Slider />
-                                        <Collapse />
-                                        <Dropdowns />
-                                        <Forms />
-                                        <InputGroup />
-                                        <ListGroup />
-                                        <MediaObject />
-                                        <Modal />
-                                        <UINav />
-                                        <Pagination />
-                                        <PopUp />
-                                        <Scroll />
-                                        <ScrollBar />
-                                    </div>
+										<Alerts />
+										<Badge />
+										<Buttons />
+										<ButtonGroup />
+										<Card />
+										<Slider />
+										<Collapse />
+										<Dropdowns />
+										<Forms />
+										<InputGroup />
+										<ListGroup />
+										<MediaObject />
+										<Modal />
+										<UINav />
+										<Pagination />
+										<PopUp />
+										<Scroll />
+										<ScrollBar />
+									</div>
 
-                                    <div id="utilities" className="block spacer m-top-xl">
-                                        <h2>Utilities</h2>
+									<div
+										id='utilities'
+										className='block spacer m-top-xl'
+									>
+										<h2>Utilities</h2>
 
-                                        <Borders />
-                                        <Clearfix />
-                                        <Colors />
-                                        <Display />
-                                        <Embed />
-                                        <Flex />
-                                        <Float />
-                                        <Overflow />
-                                        <Position />
-                                        <Shadows />
-                                        <Sizing />
-                                        <Spacing />
-                                        <StrechedLink />
-                                        <Text />
-                                        <VerticalAlignment />
-                                        <Visibility />
-                                    </div>
-                                </div> 
+										<Borders />
+										<Clearfix />
+										<Colors />
+										<Display />
+										<Embed />
+										<Flex />
+										<Float />
+										<Overflow />
+										<Position />
+										<Shadows />
+										<Sizing />
+										<Spacing />
+										<StrechedLink />
+										<Text />
+										<VerticalAlignment />
+										<Visibility />
+									</div>
+								</div>
 
-                                <Sidebar />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
+								<Sidebar />
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
 
-            <Footer />
-        </Fragment>
-    );
+			<Footer />
+		</Fragment>
+	);
 };
 
 export default UserInterface;

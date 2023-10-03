@@ -14,65 +14,98 @@ import NewsComments from '../blocks/news/NewsComments';
 import Widget from '../blocks/widget/Widget';
 
 const NewsSinglePost = () => {
-    document.body.classList.add( 'single-post' );
+	document.body.classList.add('single-post');
 
-    return (
-        <Fragment>
-            <MetaTags>
-                <meta charSet="UTF-8" />
-                <title>News single post | Chop - Barber Shop React JS Template</title>
+	return (
+		<Fragment>
+			<MetaTags>
+				<meta charSet='UTF-8' />
+				<title>News single post | SWT Mens Grooming</title>
 
-                <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="description" content="" />
-                <meta name="keywords" content="" />
-                <meta name="robots" content="index, follow, noodp" />
-                <meta name="googlebot" content="index, follow" />
-                <meta name="google" content="notranslate" />
-                <meta name="format-detection" content="telephone=no" />
-            </MetaTags>
+				<meta
+					httpEquiv='x-ua-compatible'
+					content='ie=edge'
+				/>
+				<meta
+					name='viewport'
+					content='width=device-width, initial-scale=1'
+				/>
+				<meta
+					name='description'
+					content=''
+				/>
+				<meta
+					name='keywords'
+					content=''
+				/>
+				<meta
+					name='robots'
+					content='index, follow, noodp'
+				/>
+				<meta
+					name='googlebot'
+					content='index, follow'
+				/>
+				<meta
+					name='google'
+					content='notranslate'
+				/>
+				<meta
+					name='format-detection'
+					content='telephone=no'
+				/>
+			</MetaTags>
 
-            <Loading />
+			<Loading />
 
-            <Header logoColor="dark" />
+			<Header logoColor='dark' />
 
-            <main id="main" className="site-main">
-                <PageTitleNewsSingle />
+			<main
+				id='main'
+				className='site-main'
+			>
+				<PageTitleNewsSingle />
 
-                <div id="page-content" className="spacer m-top-xl">
-                    <div className="wrapper">
-                        <div id="single">
-                            <div className="row gutter-width-lg">
-                                <div className="col-xl-8 col-lg-8 col-md-12 single-content">
-                                    <div className="img object-fit">
-                                        <div className="object-fit-cover">
-                                            <img src="assets/img/placeholder/1054x620.jpg" alt="Best Cosmetics for Your Body and Soul" />
-                                        </div>
-                                    </div>
+				<div
+					id='page-content'
+					className='spacer m-top-xl'
+				>
+					<div className='wrapper'>
+						<div id='single'>
+							<div className='row gutter-width-lg'>
+								<div className='col-xl-8 col-lg-8 col-md-12 single-content'>
+									<div className='img object-fit'>
+										<div className='object-fit-cover'>
+											<img
+												src='assets/img/placeholder/1054x620.jpg'
+												alt='Best Cosmetics for Your Body and Soul'
+											/>
+										</div>
+									</div>
 
-                                    <NewsMeta />
+									<NewsMeta />
 
-                                    <NewsTitle />
+									<NewsTitle />
 
-                                    <NewsDescription />
+									<NewsDescription />
 
-                                    <NewsTags />
+									<NewsTags />
 
-                                    <NewsComments />
-                                </div>
+									<NewsComments />
+								</div>
 
-                                <div className="col-xl-4 col-lg-4 col-md-12">
-                                    <Widget />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
+								<div className='col-xl-4 col-lg-4 col-md-12'>
+									<Widget />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
 
-            <Footer />
-        </Fragment>
-    );
+			<Footer />
+		</Fragment>
+	);
 };
 
 export default NewsSinglePost;

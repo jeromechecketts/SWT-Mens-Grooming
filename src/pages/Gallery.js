@@ -9,39 +9,69 @@ import PageTitleGallery from '../blocks/page-title/PageTitleGallery';
 import GalleryContent from '../blocks/gallery/GalleryContent';
 
 const Gallery = () => {
-    document.body.classList.add( 'page' );
+	document.body.classList.add('page');
 
-    return (
-        <Fragment>
-            <MetaTags>
-                <meta charSet="UTF-8" />
-                <title>Gallery | Chop - Barber Shop React JS Template</title>
+	return (
+		<Fragment>
+			<MetaTags>
+				<meta charSet='UTF-8' />
+				<title>Gallery | SWT Mens Grooming</title>
 
-                <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="description" content="" />
-                <meta name="keywords" content="" />
-                <meta name="robots" content="index, follow, noodp" />
-                <meta name="googlebot" content="index, follow" />
-                <meta name="google" content="notranslate" />
-                <meta name="format-detection" content="telephone=no" />
-            </MetaTags>
+				<meta
+					httpEquiv='x-ua-compatible'
+					content='ie=edge'
+				/>
+				<meta
+					name='viewport'
+					content='width=device-width, initial-scale=1'
+				/>
+				<meta
+					name='description'
+					content=''
+				/>
+				<meta
+					name='keywords'
+					content=''
+				/>
+				<meta
+					name='robots'
+					content='index, follow, noodp'
+				/>
+				<meta
+					name='googlebot'
+					content='index, follow'
+				/>
+				<meta
+					name='google'
+					content='notranslate'
+				/>
+				<meta
+					name='format-detection'
+					content='telephone=no'
+				/>
+			</MetaTags>
 
-            <Loading />
+			<Loading />
 
-            <Header logoColor="dark" />
+			<Header logoColor='dark' />
 
-            <main id="main" className="site-main">
-                <PageTitleGallery />
+			<main
+				id='main'
+				className='site-main'
+			>
+				<PageTitleGallery />
 
-                <section id="page-content" className="spacer p-top-xl">
-                    <GalleryContent />
-                </section>
-            </main>
+				<section
+					id='page-content'
+					className='spacer p-top-xl'
+				>
+					<GalleryContent />
+				</section>
+			</main>
 
-            <Footer />
-        </Fragment>
-    );
+			<Footer />
+		</Fragment>
+	);
 };
 
 export default Gallery;
