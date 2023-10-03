@@ -273,16 +273,6 @@ const ServicesInside = () => {
 																From $35
 															</span>
 														</li>
-
-														<li className='list-group-item d-flex justify-content-between align-items-center'>
-															<span className='list-group-title'>
-																Fire removal of
-																ear hair
-															</span>
-															<span className='list-group-price'>
-																From $35
-															</span>
-														</li>
 													</ul>
 												</div>
 											</div>
