@@ -233,6 +233,16 @@ const ServicesInside = () => {
 																$15
 															</span>
 														</li>
+
+														<li className='list-group-item d-flex justify-content-between align-items-center'>
+															<span className='list-group-title'>
+																Haircuts for
+																Women
+															</span>
+															<span className='list-group-price'>
+																$35
+															</span>
+														</li>
 													</ul>
 												</div>
 
