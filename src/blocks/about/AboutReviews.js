@@ -88,7 +88,7 @@ class AboutReviews extends Component {
 
                             <div className="adv-swiper-slide reviews-text-item">
                                 <div className="reviews-text-item-content">
-                                    <h3>Had my haircut here multiple times after getting fed up with subpar haircuts at Great Clips.  The attention to detail and excellent service were refreshing.  Highly recommend!</h3>
+                                    <h3>Had my hair cut here multiple times after getting fed up with subpar haircuts at Great Clips.  The attention to detail and excellent service were refreshing.  Highly recommend!</h3>
                                 </div>
                             </div>
                         </div>
