@@ -210,18 +210,17 @@ const ServicesInside = () => {
 																Haircut
 															</span>
 															<span className='list-group-price'>
-																From $35
+																$25
 															</span>
 														</li>
 
 														<li className='list-group-item d-flex justify-content-between align-items-center'>
 															<span className='list-group-title'>
 																Haircuts for
-																children and
-																students
+																children 12 and under
 															</span>
 															<span className='list-group-price'>
-																From $35
+																$20
 															</span>
 														</li>
 
@@ -231,7 +230,7 @@ const ServicesInside = () => {
 																Seniors
 															</span>
 															<span className='list-group-price'>
-																From $35
+																$15
 															</span>
 														</li>
 													</ul>
@@ -249,7 +248,7 @@ const ServicesInside = () => {
 																beard modeling
 															</span>
 															<span className='list-group-price'>
-																From $35
+																$35
 															</span>
 														</li>
 
@@ -260,7 +259,7 @@ const ServicesInside = () => {
 																hot towels
 															</span>
 															<span className='list-group-price'>
-																From $35
+																$25
 															</span>
 														</li>
 
@@ -270,7 +269,32 @@ const ServicesInside = () => {
 																using hot towels
 															</span>
 															<span className='list-group-price'>
-																From $35
+																$15
+															</span>
+														</li>
+													</ul>
+												</div>
+												<div className='price-list-item'>
+													<div className='price-list-item-title'>
+														<h3>Misc</h3>
+													</div>
+
+													<ul className='price-list-item-list-group list-group'>
+														<li className='list-group-item d-flex justify-content-between align-items-center'>
+															<span className='list-group-title'>
+																Facial
+															</span>
+															<span className='list-group-price'>
+																$40
+															</span>
+														</li>
+
+														<li className='list-group-item d-flex justify-content-between align-items-center'>
+															<span className='list-group-title'>
+																Wax
+															</span>
+															<span className='list-group-price'>
+																$10
 															</span>
 														</li>
 													</ul>
