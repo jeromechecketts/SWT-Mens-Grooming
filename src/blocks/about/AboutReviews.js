@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import Swiper from 'swiper';
 
 import savannah from '../../assets/img/testimonials/savannahGilleland.jpg'
+import jerome from '../../assets/img/testimonials/Jerome.jpeg'
 
 class AboutReviews extends Component {
     constructor( props ) {
         super( props );
         this.state = {
-            name: "Savanah Gilleland",
+            name: "",
             position: "",
         }
     }
@@ -87,13 +88,7 @@ class AboutReviews extends Component {
 
                             <div className="adv-swiper-slide reviews-text-item">
                                 <div className="reviews-text-item-content">
-                                    <h3>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account.</h3>
-                                </div>
-                            </div>
-
-                            <div className="adv-swiper-slide reviews-text-item">
-                                <div className="reviews-text-item-content">
-                                    <h3>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account.</h3>
+                                    <h3>Had my haircut here multiple times after getting fed up with subpar haircuts at Great Clips.  The attention to detail and excellent service were refreshing.  Highly recommend!</h3>
                                 </div>
                             </div>
                         </div>
@@ -106,12 +101,8 @@ class AboutReviews extends Component {
                                     <img src={savannah} alt="Savannah Gilleland" />
                                 </div>
 
-                                <div onClick={ ( e ) => this.handleClick( e ) } className="adv-swiper-slide reviews-thumbs-item" data-reviews-name="Arthur Hopin" data-reviews-position="CEO at Company">
-                                    <img src="assets/img/placeholder/60x60.jpg" alt="Arthur Hopin" />
-                                </div>
-
-                                <div onClick={ ( e ) => this.handleClick( e ) } className="adv-swiper-slide reviews-thumbs-item" data-reviews-name="Rosie Ford" data-reviews-position="CEO at Company">
-                                    <img src="assets/img/placeholder/60x60.jpg" alt="Rosie Ford" />
+                                <div onClick={ ( e ) => this.handleClick( e ) } className="adv-swiper-slide reviews-thumbs-item" data-reviews-name="Jerome Checketts" data-reviews-position="">
+                                    <img src={jerome} alt="Jerome Checketts" />
                                 </div>
                             </div>
                         </div>
